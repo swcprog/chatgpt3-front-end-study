@@ -1,0 +1,39 @@
+<div class="gp3__navbar">
+  <div class="gpt3__navbar-links">
+    <div class="gpt3__navbar-links_logo">
+      <img src="../../../assets/logo.svg" alt="logo" />
+    </div>
+    <div class="gpt3__navbar-links_container">
+      <p><a href="#home">Home</a></p>
+      <p><a href="#wgpt3">What is GPT3?</a></p>
+      <p><a href="#possibility">Open AI</a></p>
+      <p><a href="#features">Case Studies</a></p>
+      <p><a href="#blog">Library</a></p>
+    </div>
+  </div>
+  <div class="gpt3__navbar-sign">
+    <p>Sign in</p>
+    <button type="button">Sign up</button>
+  </div>
+  <div class="gpt3__navbar-menu">
+    <i
+      [ngClass]="showMobileMenu ? 'pi pi-times' : 'pi pi-bars'"
+      style="color: #fff"
+      (click)="toggleMenu()"
+    ></i>
+
+    <div *ngIf="showMobileMenu" class="gpt3__navbar-menu_container scale-up-center">
+      <div class="gpt3__navbar-menu__links">
+        <p><a href="#home">Home</a></p>
+        <p><a href="#wgpt3">What is GPT3?</a></p>
+        <p><a href="#possibility">Open AI</a></p>
+        <p><a href="#features">Case Studies</a></p>
+        <p><a href="#blog">Library</a></p>
+      </div>
+      <div class="gpt3__navbar-menu_container-links-sign">
+        <p>Sign in</p>
+        <button type="button">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
