@@ -5,6 +5,7 @@ import { BrandComponent } from './brand/brand.component';
 import { CTAComponent } from './cta/cta.component';
 import { FeatureComponent } from './feature/feature.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FeatureComponent,
     NavbarComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     ArticleComponent,
     BrandComponent,

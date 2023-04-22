@@ -13,7 +13,7 @@
   </div>
   <div class="gpt3__navbar-sign">
     <p>Sign in</p>
-    <button type="button">Sign up</button>
+    <button [routerLink]="['/signup']" type="button">Sign up</button>
   </div>
   <div class="gpt3__navbar-menu">
     <i
@@ -22,17 +22,20 @@
       (click)="toggleMenu()"
     ></i>
 
-    <div *ngIf="showMobileMenu" class="gpt3__navbar-menu_container scale-up-center">
+    <div
+      *ngIf="showMobileMenu"
+      class="gpt3__navbar-menu_container scale-up-center"
+    >
       <div class="gpt3__navbar-menu__links">
-        <p><a href="#home">Home</a></p>
-        <p><a href="#wgpt3">What is GPT3?</a></p>
-        <p><a href="#possibility">Open AI</a></p>
-        <p><a href="#features">Case Studies</a></p>
-        <p><a href="#blog">Library</a></p>
+        <p><a (click)="toggleMenu()" href="#home">Home</a></p>
+        <p><a (click)="toggleMenu()" href="#wgpt3">What is GPT3?</a></p>
+        <p><a (click)="toggleMenu()" href="#possibility">Open AI</a></p>
+        <p><a (click)="toggleMenu()" href="#features">Case Studies</a></p>
+        <p><a (click)="toggleMenu()" href="#blog">Library</a></p>
       </div>
       <div class="gpt3__navbar-menu_container-links-sign">
         <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <button [routerLink]="['/signup']" type="button">Sign Up</button>
       </div>
     </div>
   </div>

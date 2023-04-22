@@ -1,0 +1,25 @@
+<div class="signup__container">
+  <div class="signup__formbox">
+    <form>
+      <h2 class="gradient__text">Login</h2>
+      <div class="inputbox">
+        <i class="pi pi-lock"></i>
+        <input type="email" required (blur)="onBlur()" [(ngModel)]="email" id="email" name="email"/>
+        <label for="email">Email</label>
+      </div>
+      <div class="inputbox">
+        <i class="pi pi-envelope"></i>
+        <input type="password" [(ngModel)]="password" required name="password"/>
+        <label for="password">Password</label>
+      </div>
+      <div class="forget">
+        <label for="forget"><input type="checkbox" />Remember me. </label>
+        <a href="#">Forget Password?</a>
+      </div>
+      <button (click)="autenticar()">Login</button>
+      <div class="register">
+        <p>Don't have a account? <a href="#">Register.</a></p>
+      </div>
+    </form>
+  </div>
+</div>
